@@ -1,0 +1,6 @@
+Iconos: 
+https://tablericons.com/
+[w-h 88px, stroke 1.5px, color #0098B4]
+
+iconos tratamientos:
+https://www.flaticon.com/search?word=odontology
