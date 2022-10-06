@@ -4,3 +4,13 @@ https://tablericons.com/
 
 iconos tratamientos:
 https://www.flaticon.com/search?word=odontology
+
+Font. Carrois gothic
+https://fonts.google.com/specimen/Carrois+Gothic
+https://fonts.google.com/specimen/Carrois+Gothic+SC?query=Carrois+Gothic
+
+font-family: 'Carrois Gothic', sans-serif;
+font-family: 'Carrois Gothic SC', sans-serif;
+
+normalize
+<link rel="stylesheet" href="https://necolas.github.io/normalize.css/latest/normalize.css">

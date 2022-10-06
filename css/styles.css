@@ -1,4 +1,133 @@
 :root{
     --nucleoClaro: #0098B4;
     --nucleoOscuro: #007388;
+    --azulOscuro: #034AA6;
+    --azul: #035AA6;
+    --azulClaro: #04B2D9;
+    --snow: #8BBBD9;
+    --ice: #A3C9D9;
+    --complementario: #F28705;
+    --blanco: #F2F2F2;
+    --titulo: 'Carrois Gothic SC', sans-serif;
+    --texto: 'Carrois Gothic', sans-serif;
 }
+/* //////////////////////////////////////////////////////////////// */
+/* notas */
+/* font-family: 'Carrois Gothic SC', sans-serif; 
+font-family: 'Carrois Gothic', sans-serif; */
+
+/* //////////////////////////////////////////////////////////////// */
+/* inicio 1 rem = 10px */
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-size: 16px;
+    /* Final 1 rem = 10px */
+    background-color: var(--blanco);
+    font-family: var(--texto);
+}
+
+p {
+    font-size: 2rem;
+}
+
+h2 {
+    font-size: 4rem;
+    font-weight: bold;
+}
+
+h3 {
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+h4 {
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+/* final 1 rem = 10px */
+/* //////////////////////////////////////////////////////////////// */
+/* Inicio Contenedor de main */
+.main {
+width: 90%;
+margin: auto;
+
+}
+/* Final Contenedor de main */
+/* //////////////////////////////////////////////////////////////// */
+/* inicio header */
+h1 {
+    color: var(--nucleoClaro);
+    font-size: 6rem;
+    text-align: center;
+    margin: 0em 0rem;
+    font-family: var(--titulo), sans-serif;
+}
+
+h1 a {
+    text-decoration: none;
+    color: var(--nucleoClaro)
+}
+/* final header */
+/* //////////////////////////////////////////////////////////////// */
+/* inicio navegacion */
+.navegacion-background {
+    background-color: var(--nucleoClaro);
+    box-shadow: 0px 4px 10px 0px rgb(0 0 0 / 50%);
+}
+
+.navegacion-barra {
+    margin: 1rem auto;
+    width: 80%;
+    display: flex;
+    justify-content: center;
+}
+
+
+@media (max-width: 480px) {
+    .navegacion-barra {
+        flex-direction: column;
+        width: 100%;
+    }
+}
+
+.navegacion-barra a {
+    text-decoration: none;
+    color: var(--blanco);
+    padding: 1rem 4%;
+    margin: 0rem 2rem;
+    font-family: var(--titulo), sans-serif;
+    font-size: 2.5rem;
+}
+
+@media (max-width: 1440px) {
+    .navegacion-barra a {
+    font-size: 2rem;
+    padding: 1rem 2rem;
+    margin: 0rem 1rem;
+    }
+}
+
+@media (max-width: 920px) {
+    .navegacion-barra a {
+        padding: 1rem 1rem;
+        font-size: 1.5rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .navegacion-barra a{
+        padding: 1rem 1rem;
+        margin: 0rem 0rem;
+    }
+}
+
+
+
+.navegacion-barra a:hover {
+    background-color: var(--nucleoOscuro);
+}
+
+/* final navegacion */

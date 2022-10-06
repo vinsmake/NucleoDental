@@ -4,28 +4,41 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!-- normalize -->
+    <link rel="stylesheet" href="https://necolas.github.io/normalize.css/latest/normalize.css">
+<!-- Inicio google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Carrois+Gothic&family=Carrois+Gothic+SC&display=swap" rel="stylesheet">
+<!-- Final google fonts -->
+    <link rel="preload" href="./css/styles.css" as="style">
+    <link rel="stylesheet" href="./css/styles.css">
     <title>Núcleo Dental</title>
 </head>
 <!-- Final de head -->
 <body>
-    <header>
-        <a href="index.html">
-        <h1>Núcleo Dental</h1>
-        </a>
-    </header>
-<!-- Inicio navegacion -->
-<nav>
-    <a href="index.html">Inicio</a>
-    <a href="#">Tratamientos</a>
-    <a href="#">Donde nos ubicamos</a>
-    <a href="#">Contactanos</a>
-</nav>
 
-<main>
+    <header>     
+        <h1><a href="index.html">Núcleo Dental</a></h1>
+    </header>
+
+<!-- Inicio navegacion -->
+<section class="navegacion-background">
+    <nav class="navegacion-barra">
+        <a href="index.html">Inicio</a>
+        <a href="#">Tratamientos</a>
+        <a href="#">Donde nos ubicamos</a>
+        <a href="#">Contactanos</a>
+    </nav>
+</section>
+<!-- Final navegacion -->
+
+<main class="main">
+
+<!-- Inicio portada -->
     <section>
-        <!-- portada -->
         <h2>Núcleo Dental</h2>
-        <!-- icono ubicacion -->
+<!-- icono ubicacion -->
         <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-map-2" width="88" height="88"
             viewBox="0 0 24 24" stroke-width="1.5" stroke="#0098B4" fill="none" stroke-linecap="round"
             stroke-linejoin="round">
@@ -38,35 +51,36 @@
         </svg>
     
         <p>Guadalajara y manzanillo</p>
-        <a href="#">Envianos un WhatsApp</a> <!-- enlace a WhatsApp -->
+        <!-- <a href="#">Envianos un WhatsApp</a> --> <!-- enlace a WhatsApp -->
+        <a aria-label="Chat on WhatsApp" href="https://api.whatsapp.com/send?phone=523329147808&text=!Hola%20N%C3%BAcleo%20Dental!"> <img alt="Chat on WhatsApp" src="/img/svg/WhatsAppButtonGreenLarge.svg"> </a>
     </section>
-
+<!-- Final portada -->
 
     <section>
-        <h4>Conocenos</4>
+        <h3>Conocenos</h3>
     </section>
     
         <section>
             <!-- icono quienes somos -->
             <img src="./img/group.png">
-            <h3>Quiénes somos</h3>
+            <h4>Quiénes somos</h4>
             <p>En Núcleo dental somos un grupo de odontólogos dispuestos al diagnóstico, tratamiento y prevención de las enfermedades que afectan al Aparato Estomatognático de la manera más amable y responsable, siempre buscando éxito de cada tratamiento y sobre todo la satisfacción del paciente.</p>
         </section>
 
         <section>
             <img src="./img/chair.png">
-            <h3>Conoce nuestros tratamientos</h3>
+            <h4>Conoce nuestros tratamientos</h4>
             <p>Nos especializamos en... Lorem ipsum, dolor sit amet consectetur adipisicing elit. Obcaecati eligendi ut non harum incidunt ducimus consectetur suscipit beatae quia deleniti distinctio ipsum quas vel in, perferendis tempora magnam corrupti nulla.</p>
         </section>
 
         <section>
             <img src="./img/bubble-chat.png">
-            <h3>Contactanos</h3>
+            <h4>Contactanos</h4>
             <p>Encuentra toda la informacion para ponerte en contacto conmigo</p>
         </section>
 
         <section>
-            <h3>Curriculum</h3>
+            <h4>Curriculum</h4>
             <p>Descarga mi curriculum</p>
         </section>
 
