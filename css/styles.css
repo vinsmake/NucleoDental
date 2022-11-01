@@ -57,7 +57,7 @@ h1 {
     color: var(--nucleoClaro);
     font-size: 6rem;
     text-align: center;
-    margin: 0rem 0rem;
+    margin: 3rem 0rem 0rem 0rem;
     font-family: var(--titulo), sans-serif;
     padding: 2rem 0rem 1rem 0rem;
 }
@@ -70,8 +70,17 @@ h1 a {
 /* final header */
 /* //////////////////////////////////////////////////////////////// */
 /* inicio navegacion */
-.navegacion-background {
+.navegacion {
     background-color: var(--nucleoClaro);
+}
+
+@media (max-width: 480px) { /* sticky nav bar */
+    .navegacion {
+        overflow: hidden; 
+        position: fixed;
+        top: 0;
+        width: 100%;
+    }
 }
 
 .navegacion-barra {
@@ -79,32 +88,29 @@ h1 a {
     width: 80%;
     display: flex;
     justify-content: center;
-    list-style-type: none;
-    padding: 1rem 0rem;
 }
 
 
 @media (max-width: 480px) {
     .navegacion-barra {
         flex-direction: column;
-        width: 100%;
+        align-items: none;
+        display: flex;
+        display: none;
     }
 }
 
-
-
-
-.navegacion-barra li a {
+.navegacion-barra a {
     text-decoration: none;
     color: var(--blanco);
-    padding: 1rem 4rem;
+    padding: 1rem 4%;
     margin: 0rem 2rem;
     font-family: var(--titulo), sans-serif;
     font-size: 2.5rem;
 }
 
 @media (max-width: 1440px) {
-    .navegacion-barra li a {
+    .navegacion-barra a {
     font-size: 2rem;
     padding: 1rem 2rem;
     margin: 0rem 1rem;
@@ -112,23 +118,51 @@ h1 a {
 }
 
 @media (max-width: 920px) {
-    .navegacion-barra li a {
+    .navegacion-barra a {
         padding: 1rem 1rem;
         font-size: 1.5rem;
     }
 }
 
 @media (max-width: 480px) {
-    .navegacion-barra li a{
+    .navegacion-barra a{
         padding: 1rem 1rem;
         margin: 0rem 0rem;
+        display: block;
+        text-align: left;
+        font-size: 2rem;
     }
 }
 
-.navegacion-barra li a:hover {
+.navegacion-barra a:hover {
     background-color: var(--nucleoOscuro);
 }
 
+
+.navegacion_menu {
+    display: none;
+}
+
+@media (max-width: 480px) {
+    .navegacion_menu {
+        display: block;
+        width: 100%;
+        padding: 0 0 0 2.4rem;
+        text-align: center;
+    }
+    .navegacion_menu .menu_boton {
+        display: block;
+        padding: 0.8rem;
+        color: var(--blanco);
+        text-decoration: none;
+        font-family: 'Playfair Display', serif;
+        font-weight: normal;
+        font-size: 2rem;
+    }
+    .menu_boton span {
+        float: right;
+    }
+}
 
 
 /* final navegacion */
