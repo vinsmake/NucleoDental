@@ -29,6 +29,7 @@ body {
     font-family: var(--texto);
 }
 
+
 p {
     font-size: 2rem;
 }
@@ -72,6 +73,7 @@ h1 a {
 /* inicio navegacion */
 .navegacion {
     background-color: var(--nucleoClaro);
+    z-index: 1;
 }
 
 @media (max-width: 480px) { /* sticky nav bar */
@@ -80,6 +82,7 @@ h1 a {
         position: fixed;
         top: 0;
         width: 100%;
+
     }
 }
 
@@ -96,7 +99,7 @@ h1 a {
         flex-direction: column;
         align-items: none;
         display: flex;
-        display: none;
+        display: none; 
     }
 }
 
@@ -127,7 +130,7 @@ h1 a {
 @media (max-width: 480px) {
     .navegacion-barra a{
         padding: 1rem 1rem;
-        margin: 0rem 0rem;
+        margin: 0rem;
         display: block;
         text-align: left;
         font-size: 2rem;
@@ -141,18 +144,20 @@ h1 a {
 
 .navegacion_menu {
     display: none;
+    
 }
 
 @media (max-width: 480px) {
     .navegacion_menu {
         display: block;
         width: 100%;
-        padding: 0 0 0 2.4rem;
+        padding: 0rem;
         text-align: center;
+
     }
     .navegacion_menu .menu_boton {
         display: block;
-        padding: 0.8rem;
+        padding: 1rem;
         color: var(--blanco);
         text-decoration: none;
         font-family: 'Playfair Display', serif;
