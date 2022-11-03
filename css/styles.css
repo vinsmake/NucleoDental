@@ -63,11 +63,18 @@ h1 {
     padding: 2rem 0rem 1rem 0rem;
 }
 
+@media (max-width: 480px) {
+    h1 {
+        font-size: 4rem;
+    }
+}
+
 
 h1 a {
     text-decoration: none;
     color: var(--nucleoClaro)
 }
+
 /* final header */
 /* //////////////////////////////////////////////////////////////// */
 /* inicio navegacion */
@@ -110,6 +117,7 @@ h1 a {
     margin: 0rem 2rem;
     font-family: var(--titulo), sans-serif;
     font-size: 2.5rem;
+    
 }
 
 @media (max-width: 1440px) {
@@ -134,6 +142,7 @@ h1 a {
         display: block;
         text-align: left;
         font-size: 2rem;
+        border-bottom: 1px solid var(--nucleoOscuro);
     }
 }
 
@@ -144,8 +153,9 @@ h1 a {
 
 .navegacion_menu {
     display: none;
-    
+    border-bottom: 2px solid var(--nucleoOscuro);
 }
+
 
 @media (max-width: 480px) {
     .navegacion_menu {
@@ -158,10 +168,10 @@ h1 a {
     .navegacion_menu .menu_boton {
         display: block;
         padding: 1rem;
+        margin-left: 2rem;
         color: var(--blanco);
         text-decoration: none;
-        font-family: 'Playfair Display', serif;
-        font-weight: normal;
+        font-family: var(--titulo); 
         font-size: 2rem;
     }
     .menu_boton span {
@@ -230,6 +240,7 @@ h1 a {
 @media (max-width: 480px) {
     .portada_contenedor h2 {
         font-size: 4rem;
+        display: none;
     }
 }
 
