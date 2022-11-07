@@ -8,6 +8,7 @@
     --ice: #A3C9D9;
     --complementario: #F28705;
     --blanco: #F2F2F2;
+    --transparente: rgba(0, 0, 0, 0.0);
     --titulo: 'Carrois Gothic SC', sans-serif;
     --texto: 'Carrois Gothic', sans-serif;
 }
@@ -89,16 +90,24 @@ h1 a {
         position: fixed;
         top: 0;
         width: 100%;
+        background-color: var(--transparente);
 
     }
 }
 
 .navegacion-barra {
     margin: auto;
-    width: 80%;
+    width: 100%;
     display: flex;
     justify-content: center;
+    
 }
+
+.nada {
+    display: flex;
+}
+
+
 
 
 @media (max-width: 480px) {
@@ -108,6 +117,13 @@ h1 a {
         display: flex;
         display: none; 
     }
+    .nada {
+    background: var(--transparente);
+    height: 90rem;
+    width: auto;
+    margin: auto;
+    display: block;
+}
 }
 
 .navegacion-barra a {
@@ -117,6 +133,7 @@ h1 a {
     margin: 0rem 2rem;
     font-family: var(--titulo), sans-serif;
     font-size: 2.5rem;
+    background-color: var(--nucleoClaro);
     
 }
 
@@ -137,7 +154,7 @@ h1 a {
 
 @media (max-width: 480px) {
     .navegacion-barra a{
-        padding: 1rem 1rem;
+        padding: 1rem 2rem;
         margin: 0rem;
         display: block;
         text-align: left;
@@ -154,6 +171,8 @@ h1 a {
 .navegacion_menu {
     display: none;
     border-bottom: 2px solid var(--nucleoOscuro);
+    background-color: var(--nucleoClaro);
+
 }
 
 
