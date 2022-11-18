@@ -470,6 +470,30 @@ h1 a {
 
 /* Final GRID */
 
+.btn--whatsapp {
+    color: #ffffff;
+    background-color: #2ecc71;
+    border-radius: 6px;
+    padding: 1rem;
+    font-size: 3rem;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0rem 1rem;
+}
+.btn--call {
+    color: #ffffff;
+    background-color: var(--azul);
+    border-radius: 6px;
+    padding: 1rem;
+    font-size: 3rem;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0rem 1rem;
+}
 
 
 /* Inicio iconos */
