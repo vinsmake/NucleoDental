@@ -56,6 +56,11 @@ h4 {
 width: 90%;
 margin: auto;
 }
+@media (max-width: 480px) {
+    .main {
+    width: 95%;
+}
+}
 
 .main__tratamientos {
     width: 100%;
