@@ -27,6 +27,7 @@ body {
     font-size: 16px;
     background-color: var(--blanco);
     font-family: var(--texto);
+    text-align: justify;
 }
 
 
@@ -54,7 +55,10 @@ h4 {
 .main {
 width: 90%;
 margin: auto;
+}
 
+.main__tratamientos {
+    width: 100%;
 }
 /* Final Contenedor de main */
 /* //////////////////////////////////////////////////////////////// */
@@ -79,6 +83,10 @@ h1 {
 h1 a {
     text-decoration: none;
     color: var(--nucleoClaro)
+}
+
+a {
+        text-decoration: none;
 }
 
 /* final header */
@@ -379,7 +387,7 @@ h1 a {
     }
 
 .instagram:hover {
-    background-color: #5B51D8;
+    background-color: #FCAF45;
 }
 
 .twitter:hover {
@@ -427,6 +435,13 @@ h1 a {
     display: grid;
     grid: 1fr / 1fr 1px 1fr;
     gap: 5rem;
+    padding: 1rem;
+}
+
+@media (max-width: 480px) {
+    .contenedor__ubicacion {
+        padding: 0.5rem;
+    }
 }
 
 @media (max-width: 920px) {
@@ -437,12 +452,21 @@ h1 a {
 }
 
 .contenedor__ubicacion {
-    padding: 1rem;
     background-color: var(--blanco);
 }
 
+
+
 .contenedor__ubicacion--linea {
-    background-color: #A3C9D9;
+    background-color: var(--snow);
+    height: 80%;
+    margin-top: 10rem;
+}
+
+@media (max-width: 920px) {
+    .contenedor__ubicacion--linea {
+    display: none;
+}
 }
 
 
@@ -470,21 +494,11 @@ h1 a {
 
 /* Final GRID */
 
-.btn--whatsapp {
-    color: #ffffff;
-    background-color: #2ecc71;
-    border-radius: 6px;
-    padding: 1rem;
-    font-size: 3rem;
-    text-decoration: none;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: 0rem 1rem;
-}
+
+
+.btn--whatsapp,
 .btn--call {
     color: #ffffff;
-    background-color: var(--azul);
     border-radius: 6px;
     padding: 1rem;
     font-size: 3rem;
@@ -492,9 +506,22 @@ h1 a {
     display: flex;
     align-items: center;
     justify-content: center;
-    margin: 0rem 1rem;
+    margin: 3rem 1rem;
 }
 
+.btn--whatsapp {
+    background-color: #2ecc71;
+    margin-bottom: 5rem;
+}
+
+.btn--call {
+    background-color: var(--azul);
+}
+@media (max-width: 480px) {
+    .btn--call{
+    font-size: 2.5rem;
+}
+}
 
 /* Inicio iconos */
 
@@ -507,6 +534,72 @@ h1 a {
 .icono {
     height: 10rem;
 }
+
+.redes_sociales--inline {
+    display: grid;
+    grid: 1fr / 1fr 1fr;
+    justify-items: center;
+    width: 100%;
+    gap: 1rem;
+
+}
+
+.red_social--instagram {
+    background-color: #FCAF45;
+    border-radius: 16px;
+    color: var(--blanco);
+    font-size: 4rem;
+    margin: 0rem 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem 2rem;
+    margin: auto;
+}
+
+.instagram--inline {
+    margin: auto;
+}
+
+.red_social--facebook {
+    background-color: #3B5998;
+    border-radius: 16px;
+    color: var(--blanco);
+    font-size: 4rem;
+    margin: 0rem 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem 2rem;
+    margin: auto;
+}
+
+@media (max-width: 480px) {
+    .red_social--facebook,
+    .red_social--instagram {
+        font-size: 2rem;
+        padding: 0.5rem 1rem;
+    }
+}
+
+.facebook--inline {
+    margin: auto;
+}
+
+.red_social--instagram:hover,
+.red_social--facebook:hover,
+.btn--whatsapp:hover,
+.btn--call:hover {
+transform: scale(1.1);
+transition: transform 0.5s;
+filter: brightness(110%);
+box-shadow: 0px 4px 10px 0px rgb(0 0 0 / 50%);
+}
+
+/* //////////////////////////////////////////////////////////////// */
+/* Inicio tratamientos */
+
+
 
 /* //////////////////////////////////////////////////////////////// */
 /* Inicio footer */
@@ -524,4 +617,5 @@ footer {
 
 footer a {
     color: var(--blanco);
+    text-decoration: underline;
 }
