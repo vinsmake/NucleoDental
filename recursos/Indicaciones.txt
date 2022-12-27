@@ -1,6 +1,6 @@
 Que la informacion solamente sea del consultorio, no de ellos. Que venga la información como nucleo dental.
 
-Eliminar ubicacion de banner. [develop prueba]
+Eliminar ubicacion de banner.
 
 Núcleo Dental
 Atención Dental multidisciplinaria.
